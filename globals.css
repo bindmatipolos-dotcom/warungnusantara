@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body { margin: 0; height: 100%; background: #0b1020; overflow: hidden; touch-action: none; }
+body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: #fff; user-select: none; -webkit-user-select: none; }
+.stage { aspect-ratio: 16 / 9; width: min(100vw, calc(100dvh * 16 / 9)); position: relative; overflow: hidden; background: #000; }
+.stage canvas { width: 100%; height: 100%; display: block; image-rendering: auto; }
+.btn { background: linear-gradient(#ff5a4d, #c4221a); border: 2px solid #ffd27a; border-radius: 12px; padding: 6px 14px; font-weight: 800; color: #fff; text-shadow: 0 1px 2px #0008; }
+.btn:active { transform: translateY(1px) scale(.98); }
+.btn-gold { background: linear-gradient(#ffd34d, #e69a00); color: #5a3200; text-shadow: none; }
+.btn-green { background: linear-gradient(#52d66b, #1f9c3a); }
+.panel { background: rgba(20, 26, 48, .94); border: 2px solid #ffd27a; border-radius: 16px; }
